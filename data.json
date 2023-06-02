@@ -1,0 +1,9 @@
+{
+  "event": "tip",
+  "data": {
+    "id": "add2f3c5-b677-4708-ab2c-8627565cd962",
+    "name": "John Doe",
+    "amount": "15000",
+    "message": "This is a test message"
+  }
+}
