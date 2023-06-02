@@ -1,6 +1,6 @@
 # Bot Discord untuk Pemberitahuan Donasi
 
-Proyek ini adalah sebuah bot Discord yang dirancang untuk menerima data donasi melalui API dan mengirim pemberitahuan tentang donasi tersebut ke server Discord yang ditentukan. Bot ini terintegrasi dengan aplikasi pihak ketiga bernama Tiptap yang berfungsi sebagai penyedia data donasi.
+Projek ini adalah sebuah bot Discord yang dirancang untuk menerima data donasi melalui API dan mengirim pemberitahuan tentang donasi tersebut ke server Discord yang ditentukan. Bot ini terintegrasi dengan aplikasi pihak ketiga bernama Tiptap yang berfungsi sebagai penyedia data donasi.
 
 Dalam Project ini saya menggunakan Platform https://tiptap.id/ untuk menerima Donasi, contohnya seperti dibawah:
 ![exampleimg](/example/image.png)
