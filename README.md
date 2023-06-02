@@ -2,7 +2,7 @@
 
 Proyek ini adalah sebuah bot Discord yang dirancang untuk menerima data donasi melalui API dan mengirim pemberitahuan tentang donasi tersebut ke server Discord yang ditentukan. Bot ini terintegrasi dengan aplikasi pihak ketiga bernama Tiptap yang berfungsi sebagai penyedia data donasi.
 
-![exampleimg]([http://url/to/img.png](https://cdn.discordapp.com/attachments/1114006394266460253/1114018280194195556/image.png))
+![exampleimg](http://url/to/img.png](https://cdn.discordapp.com/attachments/1114006394266460253/1114018280194195556/image.png)
 
 ## Fitur Utama
 
