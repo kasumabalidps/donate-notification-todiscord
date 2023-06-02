@@ -25,7 +25,7 @@ Proyek ini adalah sebuah bot Discord yang dirancang untuk menerima data donasi m
 
 1. Pasang dependensi dengan menjalankan perintah `npm install`.
 2. Atur konfigurasi lingkungan dengan membuat file `.env` dan mengatur variabel `BOT_TOKEN` dengan token bot Discord Anda.
-3. Jalankan bot dengan menjalankan perintah `npm start`.
+3. Jalankan bot dengan menjalankan perintah `npm start` atau `yarn start`.
 4. Bot akan aktif dan siap menerima data donasi melalui API dan mengirimkan pemberitahuan ke server Discord yang ditentukan.
 
 ## Kontribusi
