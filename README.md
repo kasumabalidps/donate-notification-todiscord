@@ -1,47 +1,100 @@
-# Bot Discord untuk Pemberitahuan Donasi
+# Discord Donation Notification Bot
 
-Projek ini adalah sebuah bot Discord yang dirancang untuk menerima data donasi melalui API dan mengirim pemberitahuan tentang donasi tersebut ke server Discord yang ditentukan. Bot ini terintegrasi dengan aplikasi pihak ketiga bernama [Tiptap](https://tiptap.id/) yang berfungsi sebagai penyedia data donasi.
+A Discord bot designed to receive donation data through an API and send notifications about these donations to specified Discord servers. The bot integrates with [Tiptap](https://tiptap.id/), a third-party donation platform.
 
-Dalam Project ini saya menggunakan Platform https://tiptap.id/ untuk menerima Donasi, contohnya seperti dibawah:
-![exampleimg](/example/image.png)
+![Example of Tiptap Integration](/example/image.png)
 
-## Fitur Utama
+## Features
 
-- Menerima data donasi melalui API.
-- Penyimpanan data donasi dalam file `data.json`.
-- Pemberitahuan donasi ke server Discord dengan informasi lengkap tentang donasi.
-- Thumbnail dinamis berdasarkan jumlah donasi.
-- Integrasi dengan Discord.js untuk berinteraksi dengan Discord.
+- RESTful API endpoint for receiving donation data
+- Persistent storage of donation data in `data.json`
+- Rich Discord notifications with complete donation information
+- Dynamic thumbnails based on donation amounts
+- Error handling and logging middleware
+- Secure API endpoints with Helmet protection
+- Cross-origin resource sharing (CORS) support
+- API testing suite
 
-## Teknologi yang Digunakan
+## Tech Stack
 
+### Core Technologies
 - Node.js
-- Express
+- Express.js
 - Discord.js
-- fs
-- dotenv
-- Helmet
-- Cors
-- morgan
 
-## Cara Menggunakan
+### Middleware & Security
+- Helmet (Security headers)
+- CORS
+- Morgan (HTTP request logging)
 
-1. Pasang dependensi dengan menjalankan perintah `npm install`.
-2. Atur konfigurasi lingkungan dengan membuat file `.env` dan mengatur variabel `BOT_TOKEN` dengan token bot Discord Anda.
-3. Jalankan bot dengan menjalankan perintah `npm start` atau `yarn start`.
-4. Bot akan aktif dan siap menerima data donasi melalui API dan mengirimkan pemberitahuan ke server Discord yang ditentukan.
+### Development & Testing
+- Jest for API testing
+- Environment configuration via dotenv
+- Git for version control
 
-## Kontribusi
+## Setup & Installation
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. Configure environment variables:
+   - Copy `.env.example` to `.env`
+   - Set your Discord bot token in `BOT_TOKEN`
+   - Configure other necessary environment variables
 
-1. Fork repositori ini.
-2. Buat branch fitur baru (`git checkout -b fitur-baru`).
-3. Lakukan perubahan yang diinginkan.
-4. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`).
-5. Push ke branch fitur Anda (`git push origin fitur-baru`).
-6. Buat permintaan tarik (pull request) ke repositori ini.
+4. Start the server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-## Lisensi
+## API Documentation
 
-Proyek ini dilisensikan di bawah lisensi [MIT](https://opensource.org/licenses/MIT).
+The bot exposes REST endpoints for receiving donation data. Detailed API documentation is available in the source code.
+
+## Development
+
+### Project Structure
+```
+├── src/
+│   ├── api/
+│   │   ├── emojis.js
+│   │   └── index.js
+│   ├── app.js
+│   ├── index.js
+│   └── middlewares.js
+├── test/
+│   ├── api.test.js
+│   └── app.test.js
+└── config.json
+```
+
+### Testing
+Run the test suite:
+```bash
+npm test
+# or
+yarn test
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Tiptap](https://tiptap.id/) for donation platform integration
+- Discord.js community for excellent documentation and support
